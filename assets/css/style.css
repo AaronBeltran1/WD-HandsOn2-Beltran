@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #1a1a1a;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+header .btn {
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+header .btn:hover, header .btn.active {
+    background-color: #e74c3c;
+    border-radius: 5px;
+}
+
+.wallpaper {
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.top {
+    text-align: center;
+    padding: 150px 20px 20px;
+}
+
+.top .course {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.top .title {
+    font-size: 3em;
+    margin: 0;
+}
+
+.top .subtitle {
+    font-size: 2em;
+    margin: 10px 0;
+    color: #e74c3c;
+}
+
+.bottom {
+    text-align: center;
+    padding: 300px;
+}
+
+.bottom .logo {
+    width: 200px;
+    margin: -20px 0;
+}
+
+.bottom .date {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.bottom .descriptions {
+    font-size: 1.1em;
+    margin: 0 20px;
+    color: #e74c3c;
+}
+
+@media (max-width: 768px) {
+    .top {
+        padding: 100px 10px 10px;
+    }
+
+    .top .title {
+        font-size: 2.5em;
+    }
+
+    .top .subtitle {
+        font-size: 1.5em;
+    }
+
+    .bottom .logo {
+        width: 150px;
+    }
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+    border-left: 2px solid #e74c3c;
+    border-right: 2px solid #e74c3c;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e74c3c;
+    border-radius: 10px;
+    border: 3px solid #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #c0392b;
+}
